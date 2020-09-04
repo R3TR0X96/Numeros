@@ -87,4 +87,21 @@ public class Numeros {
 			
 	}
 	
+	public int numeroCombinatorio(int n) {
+		
+		int [] combinacion = new int [n-1];
+		int suma = 0;
+		
+		for (int i = 1; i <= n; i++) {
+			suma+=1;
+			if(suma <= n) {
+			
+				
+			}
+			
+			
+		}
+		
+	}
+	
 }
