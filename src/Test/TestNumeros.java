@@ -16,6 +16,7 @@ public class TestNumeros {
 		System.out.println(numero1.convertirAString());
 		System.out.println(numero1.pasarBase2());
 		System.out.println(numero1.calcularFactorial());
+		System.out.println(numero1.numeroCombinatorio(3));
 	}
 
 }

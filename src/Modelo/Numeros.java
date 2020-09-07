@@ -87,4 +87,33 @@ public class Numeros {
 			
 	}
 	
+	public int numeroCombinatorio(int n) {
+		int aux = x;
+		int operacion = 0, factorialm = aux, factorialn = n, factorialmn = aux-n;
+
+	    int mn = aux-n;
+
+	    for (int i = aux-1; i >=1; i--) {
+	        factorialm = factorialm*i;
+	    }
+
+
+	    for (int j = n-1; j >=1; j--) {
+	        factorialn = factorialn*j;
+	    }
+
+	    if(mn>2) {
+	        for (int k = mn-1; k >=1; k--) {
+	        factorialmn = factorialmn*k;
+	        }
+	    }
+	    else {
+	        factorialmn=mn;
+	    }
+
+	    operacion = factorialm/(factorialn*factorialmn);
+
+	    return operacion;
+	}
+	
 }
